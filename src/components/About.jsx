@@ -361,141 +361,44 @@ function About() {
       {/* Fun Facts & Hobbies Section */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
-          <motion.h2
-            className="text-3xl font-bold text-dark mb-8 text-center"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Fun Facts & Hobbies
-          </motion.h2>
+          <h2 className="text-3xl font-bold text-dark mb-8 text-center">Fun Facts & Hobbies</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              whileHover={{
-                y: -10,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-              }}
-            >
-              <motion.div
-                className="text-4xl mb-4 text-primary"
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-              >
-                🌍
-              </motion.div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4 text-primary">🌍</div>
               <h3 className="text-xl font-semibold text-dark mb-2">Travel Enthusiast</h3>
               <p className="text-gray-600">Visited 15 countries across 3 continents. My goal is to visit at least 30 countries before I turn 35.</p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              whileHover={{
-                y: -10,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-              }}
-            >
-              <motion.div
-                className="text-4xl mb-4 text-primary"
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", delay: 0.3 }}
-              >
-                📚
-              </motion.div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4 text-primary">📚</div>
               <h3 className="text-xl font-semibold text-dark mb-2">Avid Reader</h3>
               <p className="text-gray-600">I read at least one book per month. My favorite genres are science fiction, technology, and psychology.</p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              whileHover={{
-                y: -10,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-              }}
-            >
-              <motion.div
-                className="text-4xl mb-4 text-primary"
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", delay: 0.6 }}
-              >
-                🎸
-              </motion.div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4 text-primary">🎸</div>
               <h3 className="text-xl font-semibold text-dark mb-2">Amateur Guitarist</h3>
               <p className="text-gray-600">I've been playing guitar for 5 years. I enjoy playing acoustic covers of popular songs.</p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              whileHover={{
-                y: -10,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-              }}
-            >
-              <motion.div
-                className="text-4xl mb-4 text-primary"
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", delay: 0.9 }}
-              >
-                🏃‍♂️
-              </motion.div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4 text-primary">🏃‍♂️</div>
               <h3 className="text-xl font-semibold text-dark mb-2">Fitness Enthusiast</h3>
               <p className="text-gray-600">I run 5km three times a week and have completed two half-marathons.</p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              whileHover={{
-                y: -10,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-              }}
-            >
-              <motion.div
-                className="text-4xl mb-4 text-primary"
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", delay: 1.2 }}
-              >
-                🍳
-              </motion.div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4 text-primary">🍳</div>
               <h3 className="text-xl font-semibold text-dark mb-2">Home Chef</h3>
               <p className="text-gray-600">I love experimenting with recipes from different cuisines. Italian and Thai are my specialties.</p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              whileHover={{
-                y: -10,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-              }}
-            >
-              <motion.div
-                className="text-4xl mb-4 text-primary"
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", delay: 1.5 }}
-              >
-                🎮
-              </motion.div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4 text-primary">🎮</div>
               <h3 className="text-xl font-semibold text-dark mb-2">Casual Gamer</h3>
               <p className="text-gray-600">I enjoy strategy and puzzle games that challenge my problem-solving skills.</p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
